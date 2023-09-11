@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ลงทะเบียน Line OA อีซูซุ</title>
+  </head>
+  <body>
+    <head>
+      <h2>ลงทะเบียนเพิ่มเพื่อนใน Line</h2>
+    </head>
+    <!-- <img id="pictureUrl" />
+    <div class="box">
+      <div class="row">
+        <div class="label">ชื่อบัญชี Line</div>
+        <div class="text" id="displayName"></div>
+      </div>
+      <div class="row">
+        <div class="label">เลขเครื่อง</div>
+        <div class="text" id="engno"></div>
+      </div>
+      <div class="row">
+        <div class="label">เลขตัวถัง</div>
+        <div class="text" id="chasno"></div>
+      </div>
+      <div class="row">
+        <div class="label">รหัสสาขา</div>
+        <div class="text" id="branch"></div>
+      </div>
+    </div>
+    <p id="alert-text"></p>
+    <div id="btn-line">
+      <a id="btn-link" href=""
+        ><img
+          src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png"
+          alt="ยืนยันเพิ่มเพื่อน"
+          height="36"
+      /></a>
+      <p id="line-text">คลิ๊ก..! ลงทะเบียนเพิ่มเพื่อน</p>
+    </div> -->
+
+    <!-- <script src="https://static.line-scdn.net/liff/edge/versions/2.9.0/sdk.js"></script> -->
+    <script>
+      // const queryString = window.location.search;
+      // const urlParams = new URLSearchParams(queryString);
+      // var parameter = '';
+      // var branch = urlParams.get('branch');
+      // var engno = urlParams.get('engno');
+      // var chasno = urlParams.get('chasno');
+      // var size_car = urlParams.get('size_car');
+      // var dlv_type = urlParams.get('location');
+      // var user_use = urlParams.get('user_use');
+      // var remark = urlParams.get('remark');
+      // var addType = urlParams.get('addType');
+
+      // function runApp() {
+      //   liff
+      //     .getProfile()
+      //     .then((profile) => {
+      //       var userId = profile.userId;
+      //       var displayName = profile.displayName;
+      //       var pictureUrl = profile.pictureUrl;
+      //       var userEmail = liff.getDecodedIDToken().email;
+      //       var link_webapp =
+      //         'https://script.google.com/macros/s/AKfycbxUKBZV_xVuqyGUsYMnDuIEnYHFhq1BcyU_5DOFccYpqz0TqVfhRyt-bKRu55rtFxqc/exec';
+      //       link_webapp =
+      //         link_webapp +
+      //         '?add_type=' +
+      //         addType +
+      //         '&engno=' +
+      //         engno +
+      //         '&userId=' +
+      //         userId +
+      //         '&chasno=' +
+      //         chasno +
+      //         '&size_car=' +
+      //         size_car +
+      //         '&branch=' +
+      //         branch +
+      //         '&dlv_type=' +
+      //         dlv_type +
+      //         '&user_use=' +
+      //         user_use +
+      //         '&displayName=' +
+      //         displayName +
+      //         '&pictureUrl=' +
+      //         pictureUrl +
+      //         '&userEmail=' +
+      //         userEmail +
+      //         '&remark=' +
+      //         remark;
+      //       document.getElementById('pictureUrl').src = pictureUrl;
+      //       document.getElementById('displayName').innerText = displayName;
+      //       document.getElementById('engno').innerText = engno;
+      //       document.getElementById('chasno').innerText = chasno;
+      //       document.getElementById('branch').innerText = branch;
+      //       document.getElementById('btn-link').href = link_branch(branch);
+      //       if (chasno == '') {
+      //         document.getElementById('alert-text').innerText =
+      //           'โปรดสแกน QR-CODE เพื่อลงทะเบียนใหม่อีกครั้ง';
+      //       } else {
+      //         runWebApp(link_webapp);
+      //       }
+      //     })
+      //     .catch((err) => console.error(err));
+      // }
+      // liff.init(
+      //   { liffId: '2000715483-MrE104Jo' },
+      //   () => {
+      //     const destinationUrl = windown.location.href;
+      //     console.log(destinationUrl);
+      //     if (liff.isLoggedIn()) {
+      //       runApp();
+      //     } else {
+      //       liff.login();
+      //     }
+      //     if (!liff.isLoggedIn()) {
+      //       const destinationUrl = windown.location.href;
+      //       liff.login({ redirectUri: destinationUrl });
+      //     }
+      //     runApp();
+      //   },
+      //   (err) => console.error(err.code, error.message)
+      // );
+      // function link_branch(branch) {
+      //   switch (branch) {
+      //     case '40090101':
+      //       return 'https://lin.ee/yAkvSrf';
+      //     case '40090102':
+      //       return 'https://lin.ee/EKHNjmw';
+      //     case '40090103':
+      //       return 'https://lin.ee/zzG8LBO';
+      //     case '40090104':
+      //       return 'https://lin.ee/Zw27CrY';
+      //     case '40090105':
+      //       return 'https://lin.ee/853920c';
+      //     case '40090106':
+      //       return 'https://lin.ee/HMkVTOd';
+      //     case '40090107':
+      //       return 'https://lin.ee/jwkvc1o';
+      //     case '40090108':
+      //       return 'https://lin.ee/13HvHyW';
+      //     case '40090109':
+      //       return 'https://lin.ee/PSIWwx1';
+      //     case '40090110':
+      //       return 'https://lin.ee/qJVTj8J';
+      //     case '40090111':
+      //       return 'https://lin.ee/V5d83fZ';
+      //     case '40090113':
+      //       return 'https://lin.ee/Inw0AlO';
+      //     case '40090115':
+      //       return 'https://lin.ee/WCflo6k';
+      //     case '40099103':
+      //       return 'https://lin.ee/ktGXqfn';
+      //     case '40099110':
+      //       return 'https://lin.ee/U8k8enQ';
+      //     default:
+      //       return 'https://lin.ee/c6wTL2p';
+      //   }
+      // }
+      // function runWebApp(link_webapp) {
+      //   fetch(link_webapp)
+      //     .then((document.getElementById('btn-line').style.display = 'flex'))
+      //     .catch((err) => alert('ส่งข้อมูลไม่สำเร็จ'));
+      // }
+    </script>
+  </body>
+</html>
